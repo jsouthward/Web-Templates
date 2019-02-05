@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Forms</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+    <!-- CSS-Stylish.css Version 1.0 -->
+    <link rel="stylesheet" href="css/stylish.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Roboto" rel="stylesheet">
+    
+</head>
+<style> 
+    body {
+    background: #a8c0ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3f2b96, #a8c0ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    font-family: 'Roboto', sans-serif;
+    }
+    h1 {
+        font-family: 'Major Mono Display', monospace;
+    }
+    form {
+        margin: 0 auto;
+        background-color: white;
+        padding: 20px 40px 40px 40px;
+    }
+    form input{
+        width: 100%;
+        margin-top: 10px;
+        padding-top: 5px
+    }
+    form input::placeholder {
+        font-family: 'Roboto', sans-serif;
+        color: #939393;
+    }
+    textarea:focus, input:focus{
+        outline: none;
+    }
+    
+    /* Login Form Specific */
+    #logIn form {
+        width: 40%;
+        max-width: 240px;
+    }
+    #logIn .submit {
+        border:0;
+        padding: 7px;
+        width: 102%;
+        background: #000000;
+        color: white;
+    }
+    #logIn form span {
+        float: right;
+    }
+    
+</style>
+    
+<body>
+
+<div id="logIn">
+    <form id="LoginForm" action="#" method="post">
+        <span>x</span>
+        <h1>Log in Form.</h1>
+        <div>
+            <input type="text" name="name" id="name" value="" placeholder=" Username" tabindex="1">
+        </div>
+        <div>
+            <input type="text" name="name" id="name" value="" placeholder=" Password" tabindex="2">   
+        </div>
+        <div >
+            <input class="submit" type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+
+<br>
+    
+<div id="payment">
+    <form id="paymentForm" action="#" method="post">
+        <h1>CArd detaIls.</h1>
+        
+    </form>
+</div>
+
+<br>
+ 
+<form id="myForm" action="#" method="post">
+    <h1> raNdom Stuff.</h1>
+  <div>
+    <label for="name">Text Input:</label>
+    <input type="text" name="name" id="name" value="" tabindex="1">
+  </div>
+
+  <div>
+    <h4>Radio Button Choice</h4>
+    <label for="radio-choice-1">Choice 1</label>
+    <input type="radio" name="radio-choice" id="radio-choice-1" tabindex="2" value="choice-1">
+    <label for="radio-choice-2">Choice 2</label>
+    <input type="radio" name="radio-choice" id="radio-choice-2" tabindex="3" value="choice-2">
+  </div>
+
+  <div>
+    <label for="select-choice">Select Dropdown Choice:</label>
+    <select name="select-choice" id="select-choice">
+      <option value="Choice 1">Choice 1</option>
+      <option value="Choice 2">Choice 2</option>
+      <option value="Choice 3">Choice 3</option>
+    </select>
+  </div>
+	
+  <div>
+    <label for="textarea">Textarea:</label>
+    <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+  </div>
+	
+  <div>
+    <label for="checkbox">Checkbox:</label>
+    <input type="checkbox" name="checkbox">
+  </div>
+
+  <div>
+    <input type="submit" value="Submit">
+  </div>
+
+</form>
+-->
+
+</body>
+</html>
